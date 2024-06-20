@@ -9,47 +9,37 @@
 </head>
 <body>
     <div class="formulario">
-    <form action="/processamento-de-dados" method="post">
-        <h1 class="titulo">Curriculo</h1>
-        <div class="campos-formulario">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Insira seu nome" />
-          </div>
-          <div class="campos-formulario">
-            <label for="dataDeNascimento:">Data de nascimento:</label>
-            <input type="date" id="dataDeNascimento">
-          </div>
-          <div class="campos-formulario">
-            <label for="idade">Idade:</label>
-            <input id="idade:"></input>
-          </div>
-
-          <div class="campos-formulario">
-            <label for="resumoPessoal">Resumo Pessoal:</label>
-            <input id="resumoPessoal"></input>
-          </div>
-
-          <h3 class="titulo">Sexo</h3>
-          <div class="sexo">
-            <label for="masculino"></label>
-            <input id = "masculino" type="radio" name="sexo" value="Masculino"/> Masculino<br />
-
-            <label for="feminino"></label>
-            <input  id="feminino" type="radio" name="sexo" value="Feminino"/> Feminino<br />
-          </div>
-
-          <div class="experiencias-profissionais">
-            <button id="adicionar-experiencias" type="button">Adicionar experiências +</button>
-            
-            <div id="experiencias"></div>
-          </div>
-
-
-          <button id="botao-enviar" type="submit">enviar</button>
-          </div>
-
-
-    </form>
-</div>
+        <form action="/processamento-de-dados" method="post">
+            <h1 class="titulo">Curriculo</h1>
+            <div class="campos-formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu nome" />
+            </div>
+            <div class="campos-formulario">
+                <label for="dataDeNascimento">Data de nascimento:</label>
+                <input type="date" id="dataDeNascimento">
+            </div>
+            <div class="campos-formulario">
+                <label for="idade">Idade:</label>
+                <input id="idade" readonly placeholder="Insira a data de nascimento"></input>
+            </div>
+            <div class="campos-formulario">
+                <label for="resumoPessoal">Resumo Pessoal:</label>
+                <textarea id="resumoPessoal"></textarea>
+            </div>
+            <h3 class="titulo">Sexo</h3>
+            <div class="sexo">
+                <label for="masculino"></label>
+                <input id="masculino" type="radio" name="sexo" value="Masculino"/> Masculino<br />
+                <label for="feminino"></label>
+                <input id="feminino" type="radio" name="sexo" value="Feminino"/> Feminino<br />
+            </div>
+            <div class="experiencias-profissionais">
+                <button id="adicionar-experiencias" type="button">Adicionar experiências +</button>
+                <div id="experiencias"></div>
+            </div>
+            <button id="botao-enviar" type="submit">enviar</button>
+        </form>
+    </div>
 </body>
 </html>

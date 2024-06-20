@@ -10,6 +10,9 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(235, 231, 231);
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
 }
 .titulo{
     text-align: center;
@@ -30,10 +33,12 @@ form{
     gap: 5px;
 }
 
-input{
+input, textarea{
     background-color:   rgb(235, 231, 231);
     border-radius: 6px;
     height: 25px;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 #botao-enviar {
@@ -75,5 +80,4 @@ input{
     transition-duration: 4ms;
     transform: scale(1.04);
   }
-
   
