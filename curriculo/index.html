@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <form action="curriculo.php" method="post">
+            <h1 class="titulo">Curriculo</h1>
+            <div class="campos-formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required />
+            </div>
+            <div class="campos-formulario">
+                <label for="dataDeNascimento">Data de nascimento:</label>
+                <input type="date" id="dataDeNascimento" name="dataDeNascimento" required />
+            </div>
+            <div class="campos-formulario">
+                <label for="idade">Idade:</label>
+                <input id="idade" name="idade" readonly placeholder="Insira a data de nascimento" required />
+            </div>
+            <div class="campos-formulario">
+                <label for="resumoPessoal">Resumo Pessoal:</label>
+                <textarea id="resumoPessoal" name="resumoPessoal"></textarea>
+            </div>
+            <h3 class="titulo">Sexo</h3>
+            <div class="sexo">
+                <label for="masculino"></label>
+                <input id="masculino" type="radio" name="sexo" value="Masculino" required /> Masculino<br />
+                <label for="feminino"></label>
+                <input id="feminino" type="radio" name="sexo" value="Feminino" required /> Feminino<br />
+            </div>
+            <div class="experiencias-profissionais">
+                <button id="adicionar-experiencias" type="button">Adicionar experiências +</button>
+                <div id="experiencias"></div>
+            </div>
+            <button id="botao-enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
